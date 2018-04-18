@@ -37,6 +37,8 @@ library
 
 foreign-library godot-haskell-plugin
   type: native-shared
+  if os(Windows)
+    options: standalone
   other-modules: Flib
   include-dirs:
       godot_headers
